@@ -1,0 +1,184 @@
+Loading data...
+Loaded data with 24 samples and 14950 genes
+Data matrix type: <class 'scipy.sparse._csr.csr_matrix'>
+Converting sparse matrix to dense...
+Conversion complete
+Data appears to be already log-transformed, skipping normalization...
+Initializing PyWGCNA...
+[92mSaving data to be True, checking requirements ...[0m
+Setting metadata colors...
+
+Step 1: Preprocessing data...
+[1m[94mPre-processing...[0m
+	Detecting genes and samples with too many missing values...
+	Done pre-processing..
+
+
+Step 2: Finding modules...
+[1m[94mRun WGCNA...[0m
+[96mpickSoftThreshold: calculating connectivity for given powers...[0m
+will use block size  4005
+    Power  SFT.R.sq     slope  ...      mean(k)    median(k)       max(k)
+0       1  0.373015  0.916782  ...   2274.79686  2110.990275  3829.346724
+1       2  0.009646 -0.082441  ...  1198.020878  1106.964743  2576.207556
+2       3  0.352276 -0.556465  ...   731.481932   669.763977   1906.15544
+3       4  0.566121 -0.807982  ...   486.973316   432.211417  1481.515426
+4       5  0.675838 -0.952528  ...   343.421872   292.655604  1189.169437
+5       6  0.734651  -1.05865  ...   252.453056   203.571197   976.846843
+6       7  0.760107 -1.143184  ...   191.528583   145.121301   821.704305
+7       8  0.790092 -1.210556  ...   148.971714   105.273506   701.473232
+8       9  0.787536 -1.261475  ...   118.240478    77.534986   605.659087
+9      10   0.79197 -1.308927  ...    95.441788    58.341569   527.908285
+10     11  0.802559 -1.332464  ...    78.144851    44.133271   463.864545
+11     13   0.81528 -1.379276  ...    54.261507    26.144237   366.508221
+12     15  0.817425 -1.432874  ...    39.126187    16.170204   299.067362
+13     17  0.820275 -1.487991  ...    29.069023    10.248776   248.117028
+14     19  0.818377 -1.525023  ...    22.130057     6.650473   208.645826
+
+[15 rows x 7 columns]
+[92mNo power detected to have scale free network!
+Found the best given power which is 17.[0m
+[96mcalculating adjacency matrix ...[0m
+	Done..
+
+[96mcalculating TOM similarity matrix ...[0m
+	Done..
+
+[96mGoing through the merge tree...[0m
+..cutHeight not given, setting it to 0.998  ===>  99% of the (truncated) height range in dendro.
+	Done..
+
+[96mCalculating 35 module eigengenes in given set...[0m
+	Done..
+
+mergeCloseModules: Merging modules whose distance is less than 0.2
+fixDataStructure: data is not a Dictionary: converting it into one.
+multiSetMEs: Calculating module MEs.
+  Working on set 1 ...
+[96mCalculating 35 module eigengenes in given set...[0m
+	Done..
+
+multiSetMEs: Calculating module MEs.
+  Working on set 1 ...
+[96mCalculating 24 module eigengenes in given set...[0m
+	Done..
+
+multiSetMEs: Calculating module MEs.
+  Working on set 1 ...
+[96mCalculating 13 module eigengenes in given set...[0m
+	Done..
+
+multiSetMEs: Calculating module MEs.
+  Working on set 1 ...
+[96mCalculating 12 module eigengenes in given set...[0m
+	Done..
+
+multiSetMEs: Calculating module MEs.
+  Working on set 1 ...
+[96mCalculating 11 module eigengenes in given set...[0m
+	Done..
+
+multiSetMEs: Calculating module MEs.
+  Working on set 1 ...
+[96mCalculating 10 module eigengenes in given set...[0m
+	Done..
+
+  Calculating new MEs...
+multiSetMEs: Calculating module MEs.
+  Working on set 1 ...
+[96mCalculating 10 module eigengenes in given set...[0m
+	Done..
+
+[96mCalculating 10 module eigengenes in given set...[0m
+	Done..
+
+fixDataStructure: data is not a Dictionary: converting it into one.
+orderMEs: order not given, calculating using given set 0
+	Done running WGCNA..
+
+
+Step 3: Analyzing WGCNA results...
+[1m[94mAnalysing WGCNA...[0m
+[96mCalculating module trait relationship ...[0m
+	Done..
+
+[96mAdding (signed) eigengene-based connectivity (module membership) ...[0m
+	Done..
+
+[96mplotting module heatmap eigengene...[0m
+Full analysis encountered an error: 'ListedColormap' object has no attribute 'get_cmap'
+Running analysis components separately...
+Calculating module-trait relationships...
+Calculating module membership...
+Skipping module eigengene plots due to compatibility issues...
+
+Step 4: Running additional analyses...
+Found 10 modules: ['bisque', 'burlywood', 'chocolate', 'coral', 'dimgrey', 'lightcoral', 'lightsalmon', 'maroon', 'orangered', 'white']
+Module assignments saved to /home/jiguo/data/data/wgcna_negesr/module_assignments.csv
+Module eigengenes saved to /home/jiguo/data/data/wgcna_negesr/module_eigengenes.csv
+Module-trait relationships saved
+Module membership (kME) values saved
+
+Step 5: Identifying hub genes...
+[96mcalculating adjacency matrix ...[0m
+	Done..
+
+[96mcalculating adjacency matrix ...[0m
+	Done..
+
+[96mcalculating adjacency matrix ...[0m
+	Done..
+
+[96mcalculating adjacency matrix ...[0m
+	Done..
+
+[96mcalculating adjacency matrix ...[0m
+	Done..
+
+[96mcalculating adjacency matrix ...[0m
+	Done..
+
+[96mcalculating adjacency matrix ...[0m
+	Done..
+
+[96mcalculating adjacency matrix ...[0m
+	Done..
+
+[96mcalculating adjacency matrix ...[0m
+	Done..
+
+[96mcalculating adjacency matrix ...[0m
+	Done..
+
+Hub genes saved for each module
+
+Step 6: Running functional enrichment analysis...
+No enrich terms when cutoff = 0.05 in module bisque
+No enrich terms when cutoff = 0.05 in module bisque
+No enrich terms when cutoff = 0.05 in module chocolate
+No enrich terms when cutoff = 0.05 in module dimgrey
+No enrich terms when cutoff = 0.05 in module lightsalmon
+No enrich terms when cutoff = 0.05 in module lightsalmon
+
+Step 7: Creating network visualizations...
+Network visualization failed: [Errno 2] No such file or directory: './/home/jiguo/data/data/wgcna_negesr/figures/network/top_modules_network.html'
+
+Step 8: Saving WGCNA object...
+[1m[94mSaving WGCNA as pseudobulk_analysis.p[0m
+
+Step 9: Generating summary report...
+
+Analysis complete! Results saved to: /home/jiguo/data/data/wgcna_negesr/
+
+Key output files:
+- Module assignments: module_assignments.csv
+- Module eigengenes: module_eigengenes.csv
+- Module-trait correlations: module_trait_correlation.csv
+- Module summary: module_summary.csv
+- Analysis summary: analysis_summary.txt
+- Hub genes: hub_genes_*.csv
+- WGCNA object: pseudobulk_analysis.p
+
+To reload and explore the results later:
+import PyWGCNA as pywgcna
+wgcna = pywgcna.readWGCNA('/home/jiguo/data/data/wgcna_negesr/pseudobulk_analysis.p')

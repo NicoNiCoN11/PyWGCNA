@@ -433,7 +433,7 @@ class WGCNA(GeneExp):
         self.module_trait_relationships_heatmap(metaData=self.datExpr.obs.columns.tolist(),
                                                 alternative=alternative,
                                                 show=show,
-                                                file_name=f'{self.name}_module-traitRelationships ')
+                                                file_name=f'{self.name}_module-traitRelationships')
         print("\tDone..\n")
 
         print(f"{OKCYAN}Adding (signed) eigengene-based connectivity (module membership) ...{ENDC}")
